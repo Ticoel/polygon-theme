@@ -1,5 +1,5 @@
-dofile("Thèmes/polygon-theme/settings.lua")
-dofile("Thèmes/polygon-theme/infos.lua")
+dofile("Themes/polygon-theme/settings.lua")
+dofile("Themes/polygon-theme/infos.lua")
 
 local cs = nil
 cr = nil
@@ -136,9 +136,9 @@ function conky_main()
     Infos.cell[4]["body"][6] = "Down - " .. Common.get_raw_value("totaldown ${gw_iface}")
 
     raw = Common.get_raw_value("upspeedf ${gw_iface}")
-    Infos.cell[4]["ring"][1] = tonumber(raw) / 2048
+    Infos.cell[4]["ring"][1] = tonumber(raw) / 97656.25
     raw = Common.get_raw_value("downspeedf ${gw_iface}")
-    Infos.cell[4]["ring"][2] = tonumber(raw) / 2048
+    Infos.cell[4]["ring"][2] = tonumber(raw) / 244140.625
 
     Infos.cell[4]["label"][1] = "Up - " .. Common.get_raw_value("upspeed ${gw_iface}")
     Infos.cell[4]["label"][2] = "Down - " .. Common.get_raw_value("downspeed ${gw_iface}")

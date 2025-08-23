@@ -1,4 +1,4 @@
-dofile("Thèmes/polygon-theme/common.lua")
+dofile("Themes/polygon-theme/common.lua")
 
 CellType = {
     UNKNOWN = "0",
